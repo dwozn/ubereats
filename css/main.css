@@ -1,1 +1,271 @@
 @import url("reset.css");
+
+body {
+    background: #FFFFFF;
+    color: #000000;
+    font-family: UberMoveText, sans-serif;
+}
+
+html, body, #root, #wrapper {
+    height: 100%;
+}
+
+.menu{
+    z-index: 1;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    height: 72px;
+    display: flex;
+    -moz-box-pack: start;
+    justify-content: flex-start;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    flex-direction: row;
+    padding: 0px 16px;
+    background: transparent;
+    color: rgb(0, 0, 0);
+}
+
+.menu-button {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    font: inherit;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    border-width: 0;
+    letter-spacing: inherit;
+}
+
+.menu-button > svg {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    flex: 0 0 auto;
+    fill: currentcolor;
+}
+
+.spacer {
+    height: 1px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.spacer._4 {
+    width: 4px;
+}
+
+.spacer._8 {
+    width: 8px;
+}
+
+.spacer._16 {
+    width: 16px;
+}
+
+.spacer._24 {
+    width: 24px;
+}
+
+.row._36 {
+    height: 36px;
+}
+
+.logo {
+    display: block;
+    width: auto;
+    height: 20px;
+}
+
+.f-spacer {
+    flex: 1 1 0%;
+}
+
+.nav-button {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px, rgba(0, 0, 0, 0.04) 0px 4px 4px;
+    white-space: nowrap;
+    height: 36px;
+    padding: 12px;
+    display: inline-flex;
+    border-radius: 500px;
+    -moz-box-align: center;
+    align-items: center;
+    line-height: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+
+.nav-button.button-log-in {
+    background: rgb(255, 255, 255);
+}
+
+.nav-button.button-log-in > svg {
+    height: 16px;
+    width: 16px;
+    fill: currentcolor;
+    flex: 0 0 auto;
+}
+
+.nav-button.button-sign-up {
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+#main-content {
+    display: block;
+}
+
+.main-content-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(242, 202, 47);
+    position: relative;
+}
+
+.bg-image {
+    bottom: 0px;
+    width: 100%;
+    right: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+.search-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 104px;
+    padding: 0px 16px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+}
+
+#home-enter-address-title {
+    font-weight: 700;
+    line-height: 44px;
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+
+.delivery-adress-description {
+    color: rgb(84, 84, 84);
+}
+
+.delivery-adress-wrapper {
+    margin-bottom: 8px; 
+}
+
+.delivery-time-wrapper {
+    margin-bottom: 16px; 
+}
+
+.delivery-adress-wrapper, .delivery-time-wrapper{
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    min-height: 56px;
+}
+
+.delivery-adress-img > svg , .delivery-time-img > svg , .delivery-time-carret > svg{
+    margin: 12px;
+    justify-content: center;
+    fill: currentcolor;
+    flex: 0 0 auto;
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    display: flex;
+}
+
+button.find-place {
+    width: 100%;
+    min-height: 56px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: rgb(255, 255, 255);
+    line-height: 24px;
+    font-size: 18px;
+}
+
+.search-section-log-in {
+    line-height: 16px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 24px;
+    width: 100%;
+}
+.search-section-log-in > a {
+    text-decoration: underline;
+}
+
+.app-recommendation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 16px;
+    padding-top: 16px;
+}
+
+.app-recommendation-row {
+    display: flex;
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+.app-logo {
+    border-radius: 15%;
+    height: 64px;
+    width: 64px;
+    flex-shrink: 0;
+}
+
+.app-description {
+    line-height: 28px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+button.download-app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 24px;
+    cursor: pointer;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    background: rgb(238, 238, 238);
+    border-radius: 8px;
+    padding: 12px 16px;
+    min-height: 56px;
+    font-size: 18px;
+    line-height: 24px;
+    width: 100%;
+    border: none;
+}
+
+button.download-app > svg {
+    height: 18px;
+    width: 18px;
+    fill: currentcolor;
+    flex: 0 0 auto;
+}
