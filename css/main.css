@@ -77,8 +77,16 @@ html, body, #root, #wrapper {
     width: 24px;
 }
 
+.row {
+    flex-shrink: 0;
+}
+
 .row._36 {
     height: 36px;
+}
+
+.row._48 {
+    height: 48px;
 }
 
 .logo {
@@ -268,4 +276,36 @@ button.download-app > svg {
     width: 18px;
     fill: currentcolor;
     flex: 0 0 auto;
+}
+
+.articles {
+    margin: 0px 16px;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    display: flex;
+}
+
+.article-image {
+    height: auto;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.article-description {
+    line-height: 32px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.article-source {
+    margin-top: 8px;
+    text-decoration: underline;
+    line-height: 20px;
+    font-size: 16px;
+    display: block;
+    cursor: pointer;
+    font-weight: 500;
 }
