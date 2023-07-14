@@ -81,6 +81,10 @@ html, body, #root, #wrapper {
     flex-shrink: 0;
 }
 
+.row._24 {
+    height: 24px;
+}
+
 .row._36 {
     height: 36px;
 }
@@ -308,4 +312,49 @@ button.download-app > svg {
     display: block;
     cursor: pointer;
     font-weight: 500;
+}
+
+.cities {
+    margin: 0px 16px;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.cities-title {
+    line-height: 32px;
+    font-size: 24px;
+    font-weight: 700;  
+}
+
+.cities-map > img {
+    width: 100%;
+    object-fit: cover;
+    margin: 16px 0px;
+    min-height: 360px;
+}
+
+.cities-list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 16px 8px;
+    grid-auto-flow: column;
+    display: grid;
+    margin-top: 8px;
+}
+
+.city-description {
+    line-height: 24px;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.show-cities {
+    text-decoration: underline;
+    line-height: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: UberMoveText, sans-serif;
+    color: rgb(0, 0, 0);
 }
