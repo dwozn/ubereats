@@ -464,18 +464,18 @@ footer > .logo {
 /* ___________ NAVIGATION ________________ */
 
 .navigation {
-    transition: opacity 0.4s ease-in-out 0s;
+    transition: opacity 0.4s ease-in-out 0s, width 0s ease 0.4s, height 0s ease 0.4s;
     opacity: 0;
-    width: 100%;
+    width: 0px;
+    height: 0px;
     overflow-y: hidden;
-    z-index: -1;
+    z-index: 6;
     left: 0px;
     top: 0px;
     position: fixed;
     flex-direction: row;
     background: rgba(38, 38, 38, 0.8);
     display: flex;
-    height: 100%;
 }
 
 .navigation-wrapper {
@@ -601,4 +601,21 @@ footer > .logo {
     width: 16px;
     fill: currentcolor;
     flex: 0 0 auto;
+}
+
+/* ___________ ANIMATIONS ________________ */
+
+.navigation.active {
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out 0s;
+    width: 100%;
+    height: 100%;
+}
+
+aside.navigation-wrapper.active {
+    transform: translateX(0px);
+}
+
+body.noscroll {
+    overflow: hidden;
 }
